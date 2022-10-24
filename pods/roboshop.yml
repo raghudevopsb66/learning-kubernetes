@@ -55,5 +55,5 @@ metadata:
 spec:
   containers:
     - name: payment
-      image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/payment:3.0.0
+      image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/payment:3.0.2
 
