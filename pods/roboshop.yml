@@ -12,6 +12,8 @@ kind: Pod
 apiVersion: v1
 metadata:
   name: catalogue
+  labels:
+    CONPONENT: catalouge
 spec:
   containers:
     - name: catalogue
@@ -19,7 +21,19 @@ spec:
       env:
         - name: MONGO
           value: "true"
-          
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: catalogue
+spec:
+  selector:
+    COMPONENT: catalogue
+  ports:
+    - protocol: TCP
+      port: 8080
+      targetPort: 8080
 ---
 kind: Pod
 apiVersion: v1
