@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: frontend
   labels:
-    CONPONENT: frontend
+    COMPONENT: frontend
 spec:
   containers:
     - name: frontend
@@ -29,7 +29,7 @@ apiVersion: v1
 metadata:
   name: catalogue
   labels:
-    CONPONENT: catalouge
+    COMPONENT: catalouge
 spec:
   containers:
     - name: catalogue
@@ -56,7 +56,7 @@ apiVersion: v1
 metadata:
   name: cart
   labels:
-    CONPONENT: cart
+    COMPONENT: cart
 spec:
   containers:
     - name: cart
@@ -81,7 +81,7 @@ apiVersion: v1
 metadata:
   name: user
   labels:
-    CONPONENT: user
+    COMPONENT: user
 spec:
   containers:
     - name: user
@@ -109,7 +109,7 @@ apiVersion: v1
 metadata:
   name: shipping
   labels:
-    CONPONENT: shipping
+    COMPONENT: shipping
 spec:
   containers:
     - name: shipping
@@ -132,7 +132,7 @@ apiVersion: v1
 metadata:
   name: payment
   labels:
-    CONPONENT: payment
+    COMPONENT: payment
 spec:
   containers:
     - name: payment
