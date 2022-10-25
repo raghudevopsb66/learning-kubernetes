@@ -183,7 +183,7 @@ spec:
         - name: AMQP_HOST
           value: rabbitmq-prod.roboshop.internal
         - name: AMQP_USER
-          value: rabbitmq
+          value: roboshop
         - name: AMQP_PASS
           value: roboshop123
 ---
