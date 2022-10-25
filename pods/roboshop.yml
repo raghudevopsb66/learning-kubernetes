@@ -144,7 +144,7 @@ spec:
       image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/shipping:3.0.0
       env:
         - name: CART_ENDPOINT
-          value: vart:8080
+          value: cart:8080
         - name: DB_HOST
           value: prod-rds.cluster-cbvsbeoyxek4.us-east-1.rds.amazonaws.com
 
