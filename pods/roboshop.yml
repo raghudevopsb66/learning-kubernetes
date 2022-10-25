@@ -102,10 +102,14 @@ metadata:
 spec:
   containers:
     - name: user
-      image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/user:3.0.0
+      image: 739561048503.dkr.ecr.us-east-1.amazonaws.com/user:3.0.1
       env:
-        - name: MONGO
+        - name: DOCUMENTDB
           value: "true"
+        - name: MONGO_URL
+          value: "mongodb://admin1:RoboShop123@prod-docdb.cluster-cbvsbeoyxek4.us-east-1.docdb.amazonaws.com:27017/users?tls=true&replicaSet=rs0&readPreference=secondaryPreferred&retryWrites=false"
+        - name: REDIS_HOST
+          value: prod-redis.nud0cy.0001.use1.cache.amazonaws.com
 
 ---
 apiVersion: v1
