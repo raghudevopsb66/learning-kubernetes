@@ -20,4 +20,4 @@ spec:
         image: gcr.io/google_samples/gb-frontend:v3
         env:
           - name: URL
-            value: example.com
+            value: google.com
