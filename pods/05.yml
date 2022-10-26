@@ -1,0 +1,12 @@
+kind: Pod
+apiVersion: v1
+metadata:
+  name: sample02
+spec:
+  containers:
+    - name: sample1
+      image: nginx
+    - name: sample2
+      image: centos:7
+      command: ["sleep", "10000"]
+
